@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# **reactjs-events-spa**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+**reactjs-events-spa** is a React single-page application (SPA) that interacts with a WordPress backend using GraphQL and Apollo Client. This app allows users to view a list of online events and get details about each event in a modal window. It features both light and dark modes and is built with a mobile-first design approach.
 
-## Available Scripts
+## Features
+- **Online Events List**: Displays a list of events fetched via GraphQL from a WordPress backend.
+- **Event Detail Modal**: Displays detailed information about an event in a modal when clicked.
+- **Dark/Light Mode Toggle**: Users can switch between dark and light themes.
+- **Formatted Dates**: Dates are formatted in the "September 22nd, 2024" format for better readability.
+- **Styling with CSS**: The app is styled using modern CSS practices with mobile-first design considerations.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+### 1. Clone the repository:
+    git clone https://github.com/joshbarros/reactjs-events-spa.git
+    cd reactjs-events-spa
+### 2. Install Dependencies:
+    npm install
+### 3. Set up Environment Variables:
+Copy .env.example to a .env file in the root directory and add the following:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 4. Run the App:
+    npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app will be available at http://localhost:3000.
 
-### `npm test`
+## Key Libraries
+- **React**: For building the UI.
+- **Apollo Client**: To manage GraphQL queries and caching.
+- **GraphQL**: To fetch data from the WordPress backend using WPGraphQL.
+- **ESLint & Prettier**: For code linting and formatting.
+- **Husky**: For Git hooks to enforce code quality checks before commits.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Development
 
-### `npm run build`
+### Linting & Formatting
+To run ESLint and Prettier manually:
+```bash
+npm run lint
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Build
+```bash
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After building the app, deploy the files from the `build/` directory to your hosting service.
